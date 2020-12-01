@@ -3,7 +3,7 @@ import routes from './config/routes'
 
 function App() {
   return (
-    <div className="App">
+    <div className="App flex-shrink-0">
       {routes}
     </div>
   );

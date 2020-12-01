@@ -8,7 +8,9 @@ const Home = (props) =>{
   return (
     <div>
      <Navbar />
-     <Rooms />
+     <div className="pushfooter">
+
+     </div>
      <Footer />
   </div>  
   )

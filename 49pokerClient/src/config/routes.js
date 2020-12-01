@@ -3,7 +3,8 @@ import {Link,Switch,Route} from 'react-router-dom';
 import Home from '../pages/Home'
 import RoomShow from '../components/RoomShow';
 import Protables from '../components/Protables';
-import Tournaments from '../components/Tournament'
+import Tournaments from '../components/Tournament';
+import Profile from '../pages/Profile'
 
 export default (
   <Switch>
@@ -12,6 +13,8 @@ export default (
     <Route exact path="/rooms" component={RoomShow}/>
     <Route exact path="/protables" component={Protables}/>
     <Route exact path="/tournaments" component={Tournaments}/>
+    <Route exact path="/profile" component={Profile}/>
+
 
   
   </Switch>
