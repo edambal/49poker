@@ -1,7 +1,7 @@
 import React from 'react';
 import Pokercard from './Pokercard';
 import Playercard from './Playercard';
-import pokertable from '../images/pokertable3.jpg'
+import pokertable from '../images/custompoker.jpg'
 import './Table.css'
 import Navbar from './Navbar';
 import Footer from './Footer';
