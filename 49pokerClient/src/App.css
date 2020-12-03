@@ -46,7 +46,8 @@
   /* background:rgb(94, 92, 92); */
   padding:45px 0;
   color:#fff; 
-  width: 100%
+  width: 100%;
+  opacity:0.6;
 
 }
 .clr-2{
