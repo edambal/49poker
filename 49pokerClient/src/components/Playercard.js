@@ -27,7 +27,7 @@ export default class Playercard extends React.Component {
       return this.state.cardDeck.map((onecard) => {
         return(
             <>
-            <img src={onecard.image} />
+            <img className="deck-img" src={onecard.image} />
             </>
           )
         })

@@ -1,4 +1,5 @@
 import React from 'react';
+import {Link} from 'react-router-dom';
 import '../App.css';
 
 const Footer=()=>{
@@ -7,10 +8,10 @@ const Footer=()=>{
             <footer className="on-ftr bg-secondary pushfooter">
             <div className="container">
                 <div className="row">
-                    <div className="col-md-3"><h5><span className="clr-2">Quick</span>Links</h5></div>
-                    <div className="col-md-3"><h5><span className="clr-2">Extra</span>Links</h5></div>
-                    <div className="col-md-3"><h5><span className="clr-2">Address</span>Area</h5></div>
-                    <div className="col-md-3"><h5><span className="clr-2">Stay</span>Tuned</h5></div>
+                    <Link className="col-md-3 text-dark font-weight-bold" to="/tables">QuickLinks</Link>
+                    <Link className="col-md-3 text-dark font-weight-bold" to="/tables">ExtraLinks</Link>
+                    <Link className="col-md-3 text-dark font-weight-bold" to="/tables">AddressArea</Link>
+                    <Link className="col-md-3 text-dark font-weight-bold" to="/tables">StayTuned</Link>
                 </div>
                 <div className="row ftr-desc">
                     <div className="col-md-3">
@@ -25,9 +26,9 @@ const Footer=()=>{
                         <dd>Use of Terms</dd>
                     </div>
                     <div className="col-md-3">
-                        <dd>Video provides a powerful way to help you prove your point. When you click</dd>
-                        <dd>catchme@gmail.com</dd>
-                        <dd>+91 888 888 8888</dd>
+                        <dd>Play poker with Friends</dd>
+                        <dd>pokerbrats@gmail.com</dd>
+                        <dd>+1 650 393 4448</dd>
                     </div>
                     <div className="col-md-3">
                         

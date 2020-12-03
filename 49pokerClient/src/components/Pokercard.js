@@ -1,7 +1,7 @@
 import React from 'react';
-import clintImg from '../images/clintEastWood.jpg';
+import VD from '../images/VD.jpg';
+import VK from '../images/VK.jpg';
 import './Card.css';
-
 import  {
   Card,
   CardDeck,
@@ -11,29 +11,29 @@ import  {
   CardTitle,
   CardText,
 } from 'react-bootstrap-card';
+import chips from '../images/pokerchips.png';
 
 
-const Pokercard=()=>{
+const PokerCard=(props)=>{
+  // console.log("PokerCARDs", props.cards.map(card=>{card}))
+  
+  console.log()
     return(
       <>
-<CardDeck>
-  <Card>
-    <CardImg variant="top" src={clintImg} style={{width:"100px",height:"100px", position: "relative",
-    bottom: "500px",
-    left: "200px"}} />
-    <CardBlock>
-      <CardTitle>Card title</CardTitle>
-      <CardText>
-        This is a wider card with supporting text below as a natural lead-in to
-        additional content. This content is a little bit longer.
-      </CardText>
-    </CardBlock>
-    <CardFooter>
-      <small className="text-muted">Last updated 3 mins ago</small>
-    </CardFooter>
+<CardDeck className="vd-deck">
+  <Card className="card-avatar">
+    <CardImg className="vd-img"  src={VD} style={{width:"100px",height:"100px", position: "relative",bottom: "500px",left: "200px"}} />
+  </Card>
+ <CardImg cards={props.cards}/>
+  <CardImg className="vd-card-chips" src={chips}/>
+</CardDeck>
+<CardDeck className="vk-deck">
+  <Card className="card-avatar">
+    <CardImg className="vk-img" src={VK} style={{width:"100px",height:"100px", position: "relative",bottom: "1370px",left: "1050px"}} />
+    <CardImg className="vk-card-chips" src={chips}/>
   </Card>
 </CardDeck>
 </>
     )
 }
-export default Pokercard;
+export default PokerCard;

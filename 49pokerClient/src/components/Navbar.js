@@ -27,12 +27,12 @@ const Navbar = (props) =>{
               </li>
               <li className="nav-item dropdown px-5">
                 <a className="nav-link dropdown-toggle" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true"
-                  aria-expanded="false">ProTables
+                  aria-expanded="false">Tables
                 </a>
                 <div className="dropdown-menu dropdown-primary" aria-labelledby="navbarDropdownMenuLink">
-                  <Link className="dropdown-item font-weight-bold text-primary" to="/protables">CashKing</Link>
-                  <Link className="dropdown-item font-weight-bold text-primary" to="/protables">SuperNova</Link>
-                  <Link className="dropdown-item font-weight-bold text-primary" to="/protables">BrainBuster</Link>
+                  <Link className="dropdown-item font-weight-bold text-primary" to="/tables">CashKing</Link>
+                  <Link className="dropdown-item font-weight-bold text-primary" to="/tables">SuperNova</Link>
+                  <Link className="dropdown-item font-weight-bold text-primary" to="/tables">BrainBuster</Link>
                 </div>
               </li>
               <li className="nav-item dropdown px-5">

@@ -40,9 +40,9 @@
 }
 
 .on-ftr{
-  margin-top: 90px;
+  margin-top: 120px;
   margin-bottom: 50px;
-  position: fixed;
+  position: relative;
   /* background:rgb(94, 92, 92); */
   padding:45px 0;
   color:#fff; 
@@ -69,7 +69,7 @@ h5:hover{
 }
 
 .pushfooter{
-  margin-top: 10vh;
+  margin-top: 50vh;
 }
 
 

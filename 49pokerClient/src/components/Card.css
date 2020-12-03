@@ -1,10 +1,54 @@
-.table-card{
+/* .table-card{
     position: relative;
     margin-left: -800px;
     bottom: 500px;
     font-size: 20px;
     font-weight: 900;
-}
-.card-dis{
+} */
+/* .card-dis{
     left:50px;
+} */
+.vd-img{
+    border-radius: 50%;
+    width:100px;
+    height:100px;
+    position: relative;
+    bottom: 500px;
+    left: 200px;
+}
+.vk-img{
+    border-radius: 50%;
+    width:100px;
+    height:100px;
+    position: relative;
+    bottom: 1350px;
+    left: 1050px;
+}
+/* .vk-deck{
+    margin-right:300px;
+    margin-left: auto;
+    margin-bottom: 700px;
+    display:block;
+   
+}*/
+.vd-deck{
+    margin-right:300px;
+    margin-left: auto;
+    margin-bottom: 700px;
+    display:block;
+ 
+}
+.vd-card-chips{
+    position: relative;
+    width:50px;
+    height:50px;
+    bottom:550px;
+    left:70px;
+}
+.vk-card-chips{
+    position: relative;
+    width:50px;
+    height:50px;
+    bottom:1400px;
+    left:1000px;
 }

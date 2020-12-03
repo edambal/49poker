@@ -1,7 +1,16 @@
-.table-player{
+/* .table-player{
     position: relative;
     margin-left: -800px;
     bottom: 500px;
     font-size: 20px;
     font-weight: 900;
+} */
+
+.deck-img{
+    position: relative;
+    bottom:1400px;
+    right:200px;
+    width:50px;
+    height:70px;
+
 }
