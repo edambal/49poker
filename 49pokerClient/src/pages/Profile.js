@@ -6,64 +6,34 @@ import Footer from '../components/Footer';
 import './Home.css';
 
 
-// const Profile = (props) =>{
-// return (
-//   <>
-//       <Navbar />
-//       <MDBContainer>
-//         <MDBRow>
-//           <MDBCol md="6">
-//             <form>
-//               <p className="h5 text-center mb-4">Sign up</p>
-//               <div className="grey-text">
-//                 <MDBInput label="Your name" icon="user" group type="text" validate error="wrong"
-//                   success="right" />
-//                 <MDBInput label="Your email" icon="envelope" group type="email" validate error="wrong"
-//                   success="right" />
-//                 <MDBInput label="Confirm your email" icon="exclamation-triangle" group type="text" validate
-//                   error="wrong" success="right" />
-//                 <MDBInput label="Your password" icon="lock" group type="password" validate />
-//                 <MDBInput label="Image Url" icon="image" group type="text" validate />
-                
-//               </div>
-//               <div className="text-center">
-//                 <MDBBtn color="primary">Register</MDBBtn>
-//               </div>
-//             </form>
-//           </MDBCol>
-//         </MDBRow>       
-//         </MDBContainer>
-//         <Footer />    
-        
-//   </>
-  
-  
-// )
-
-// }
-
-// export default Profile;
-
-
-
-
-
-
 class Profile extends React.Component {
   constructor(props) {
     super(props);
-    this.state = {value: ''};
+    this.state = {
+      username: '',
+      image: '',
+      chipcount: 0
+    };
 
     this.handleChange = this.handleChange.bind(this);
     this.handleSubmit = this.handleSubmit.bind(this);
   }
 
   handleChange(event) {
-    this.setState({value: event.target.value});
+
+    const target = event.target;
+    const value = target.type === 'checkbox' ? target.checked : target.value;
+    const name = target.name;
+
+    console.log("Change values " ,target , value , name);
+
+    this.setState({
+      [name]: value
+    });
   }
 
   handleSubmit(event) {
-    alert('A name was submitted: ' + this.state.value);
+    alert('A name was submitted: ' + this.state.username);
     event.preventDefault();
   }
 
@@ -82,15 +52,18 @@ class Profile extends React.Component {
                   Name:
                 <input type="text" value={this.state.value} onChange={this.handleChange} />
               </label> */}
-                <MDBInput label="Your name" icon="user" group type="text" validate error="wrong"
-                  success="right" value={this.state.value} onChange={this.handleChange} />
-                {/* <MDBInput label="Your email" icon="envelope" group type="email" validate error="wrong"
-                  success="right" />
+                <MDBInput name="username" name="username" label="username" icon="user" group type="text" validate error="wrong"
+                  success="right" value={this.state.username} onChange={this.handleChange} />
+                <MDBInput label="email" icon="envelope" group type="email" validate error="wrong"
+                  success="right"/>
                 <MDBInput label="Confirm your email" icon="exclamation-triangle" group type="text" validate
                   error="wrong" success="right" />
-                <MDBInput label="Your password" icon="lock" group type="password" validate />
-                <MDBInput label="Image Url" icon="image" group type="text" validate /> */}
-                
+                <MDBInput label="Your password" icon="lock" group type="password" validate 
+                  error="wrong" success="right"/>
+                <MDBInput name="image" label="Image Url" icon="image" group type="text" validate 
+                  error="wrong" success="right" value={this.state.image} onChange={this.handleChange}/>
+                <MDBInput name="chipcount" label="Chip Count" icon="dollar" group type="number" validate 
+                  error="wrong" success="right" value={this.state.chipcount} onChange={this.handleChange}/>     
               </div>
               <div className="text-center">
                 <MDBBtn group type="submit" color="primary">Register</MDBBtn>

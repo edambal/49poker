@@ -32,7 +32,6 @@ const Table = () =>{
       </InputGroup>
       <div className="card-player-dis">
           <Pokercard/>
-          {/* <Playercard/> */}
       </div>
       
   </div>
