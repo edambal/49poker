@@ -2,7 +2,7 @@ import React from 'react';
 import {Button,ButtonGroup, CardImg} from 'react-bootstrap';
 import {InputGroup} from 'react-bootstrap';
 import {FormControl} from 'react-bootstrap';
-import Pokercard from './Pokercard';
+import Playercard from './Playercard';
 import pokertable from '../images/custompoker.jpg';
 import './Table.css'
 import Navbar from './Navbar';
@@ -31,7 +31,7 @@ const Table = () =>{
       </InputGroup.Append>
       </InputGroup>
       <div className="card-player-dis">
-          <Pokercard/>
+          <Playercard />
       </div>
       
   </div>
