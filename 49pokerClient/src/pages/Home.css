@@ -3,6 +3,8 @@ body {
 }
 
 .profile-form{
-    display:flex;
-    justify-content: center;
+    /* display:flex;
+    justify-content: center; */
+    margin-top: 80px;
 }
+
