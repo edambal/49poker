@@ -82,40 +82,27 @@ constructor(props){
 
      return(
        <>
-         <CardDeck className="vd-deck">
-              <Card className="card-avatar">
-                <CardImg className="vd-img" src={VD} style={{width:"100px",height:"100px", position: "relative",bottom: "500px",left: "200px"}} />
-              </Card>
-              <div className="vd-cards">
-              {this.renderCards(vdcard)}
+
+            <div className="vd-deck">
+                <CardImg className="vd-img" src={VD} style={{width:"100px",height:"100px", position: "relative",bottom: "500px",left: "650px"}} />
+                  </div>
+                  <div className="vd-cards">
+                  {this.renderCards(vdcard)}
+                  </div>
+                  <div className="vk-deck">
+                    <CardImg className="vk-img " src={VK} style={{width:"100px",height:"100px", position: "relative",bottom: "1370px",right: "250px"}} />    
+                  </div>
+                  <div className="vk-cards">
+                  {this.renderCards(vkcard)}
+                  </div>
+                  <div  className="de-deck">
+                    <CardImg className="de-img " src={DE} />
+                  </div>
+                  <div className="de-cards">
+                  {this.renderCards(dealer)}
               </div>
-          
-              {/* <CardImg className="vd-card-chips" src={chips}/> */}
-            </CardDeck>
-            <CardDeck className="vk-deck">
-              <Card className="card-avatar">
-                <CardImg className="vk-img " src={VK} style={{width:"100px",height:"100px", position: "relative",bottom: "1370px",left: "1050px"}} />
-                {/* <CardImg className="vk-card-chips" src={chips}/> */}
-              </Card>
-              <div className="vk-cards">
-              {this.renderCards(vkcard)}
-              </div>
-           
-            </CardDeck>
-            <CardDeck className="de-deck">
-              <Card className="card-avatar">
-                <CardImg className="de-img " src={DE} />
-                {/* <CardImg className="vk-card-chips" src={chips}/> */}
-              </Card>
-              <div className="de-cards">
-              {this.renderCards(dealer)}
-              </div>
-            
-            </CardDeck>
 
        </>
-       
-         
      )
  
     }

@@ -10,10 +10,11 @@
 }
 .de-img{
     width:100px;
+    border-radius: 50%;
     height:100px;
     position: relative;
     bottom: 2400px;
-    left: 600px;
+    left: 200px;
 }
 .de-deck{
     margin-right:300px;
@@ -39,18 +40,18 @@
 }
 .vd-cards{
     position: relative;
-    bottom:500px;
-    right:220px;
+    bottom:1200px;
+    right:400px;
 }
 .vk-cards{
     position: relative;
-    bottom:1370px;
-    left:630px;
+    bottom:2070px;
+    left:500px;
 }
 .de-cards{
     position: relative;
-    bottom:2400px;
-    left:170px;
+    bottom:3100px;
+    left:60px;
 }
 .game-control{
     position: relative;

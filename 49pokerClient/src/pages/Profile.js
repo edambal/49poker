@@ -41,10 +41,7 @@ class Profile extends React.Component {
     PokerModel.create(this.state)
       .then((data) => {
         console.log("The player id is " , data.player._id);
-        PokerModel.delete(data.player._id)
-          .then((data) =>{
-            console.log("I did delete you , you dumbass" , data);
-          });
+        this.props.history.push('/tables')
       })
 
   }
