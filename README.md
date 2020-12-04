@@ -1,4 +1,4 @@
-# 49poker
+# `49poker`
 
 A MERN Full-stack project application attempting to build a small portion of poker play.
 
@@ -9,62 +9,50 @@ provide options on which rooms or tables the user wants to join based on the inf
 It tries to implement a subset of the game , with 2 users and a dealer who are provided with the hands drawn once they enter the room.
 
 
-### User Stories
+### `User Stories`
 
 
 
 ![user stories](https://github.com/edambal/49poker/blob/master/UserStories.png?raw=true)
 
-### Wire Frames
+### `Wire Frames`
 
 ![wire frames](https://github.com/edambal/49poker/blob/master/WireFrames.jpg?raw=true)
 
-### `npm run build`
+### `Entity Relationships`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Design based on 2 entities - Rounds and Players.
+The below diagram illustrates the relationship.
+In plain words , a round of play holds many players and all the information related to them.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+![ERD](https://github.com/edambal/49poker/blob/master/ERD.png?raw=true)
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### `Technologies Used`
 
-### `npm run eject`
+* MERN Stack
+* Individual Components
+  * Express
+  * Node
+  * React
+  * Mongodb
+  * mdbreact
+  * bootstrap
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### `Site Usage`
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+A user can signup on the landing page and will automatically be assigned to a room by the system.
+Alternatively he can choose a table , room , tournament from the included navigation options.
+The user can specify the amount of chips that he wants while signing up.
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+Once in the room , he has the dealer and his co players that he want to play with.
+The player controls in the room allow you to play as per your way.
 
-## Learn More
+A guide to poker hands here
+https://www.cardplayer.com/rules-of-poker/hand-rankings
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-To learn React, check out the [React documentation](https://reactjs.org/).
 
-### Code Splitting
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
 
-### Analyzing the Bundle Size
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
