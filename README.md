@@ -1,4 +1,4 @@
-# 49poker
+# `49poker`
 
 A MERN Full-stack project application attempting to build a small portion of poker play.
 
@@ -9,17 +9,17 @@ provide options on which rooms or tables the user wants to join based on the inf
 It tries to implement a subset of the game , with 2 users and a dealer who are provided with the hands drawn once they enter the room.
 
 
-### User Stories
+### `User Stories`
 
 
 
 ![user stories](https://github.com/edambal/49poker/blob/master/UserStories.png?raw=true)
 
-### Wire Frames
+### `Wire Frames`
 
 ![wire frames](https://github.com/edambal/49poker/blob/master/WireFrames.jpg?raw=true)
 
-### Entity Relationships
+### `Entity Relationships`
 
 Design based on 2 entities - Rounds and Players.
 The below diagram illustrates the relationship.
@@ -38,32 +38,16 @@ In plain words , a round of play holds many players and all the information rela
   * mdbreact
   * bootstrap
 
-## Learn More
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+### `Site Usage`
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+A user can signup on the landing page and will automatically be assigned to a room by the system.
+Alternatively he can choose a table , room , tournament from the included navigation options.
+The user can specify the amount of chips that he wants while signing up.
 
-### Code Splitting
+Once in the room , he has the dealer and his co players that he want to play with.
+The player controls in the room allow you to play as per your way.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
 
-### Analyzing the Bundle Size
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
 
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
