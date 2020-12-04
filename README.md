@@ -19,15 +19,13 @@ It tries to implement a subset of the game , with 2 users and a dealer who are p
 
 ![wire frames](https://github.com/edambal/49poker/blob/master/WireFrames.jpg?raw=true)
 
-### `npm run build`
+### Entity Relationships
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Design based on 2 entities - Rounds and Players.
+The below diagram illustrates the relationship.
+In plain words , a round of play holds many players and all the information related to them.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+![ERD](https://github.com/edambal/49poker/blob/master/ERD.png?raw=true)
 
 ### `npm run eject`
 
