@@ -15,10 +15,9 @@ It tries to implement a subset of the game , with 2 users and a dealer who are p
 
 ![user stories](https://github.com/edambal/49poker/blob/master/UserStories.png?raw=true)
 
-### `npm test`
+### Wire Frames
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+![wire frames](https://github.com/edambal/49poker/blob/master/WireFrames.jpg?raw=true)
 
 ### `npm run build`
 
