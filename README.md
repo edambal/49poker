@@ -11,8 +11,9 @@ It tries to implement a subset of the game , with 2 users and a dealer who are p
 
 ### User Stories
 
-![Image of Yaktocat]
-(https://octodex.github.com/images/yaktocat.png)
+
+
+![user stories](https://github.com/edambal/49poker/blob/master/UserStories.png?raw=true)
 
 ### `npm test`
 
