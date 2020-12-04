@@ -67,36 +67,7 @@ class Table extends React.Component{
                             <MDBBtn group type="submit" color="danger">RAISE</MDBBtn>
                         </form>
                     </ButtonGroup>
-                    
-
-                        
-                        
-
-                        {/* <div class="md-form input-group mb-3">
-                            <div class="input-group-prepend">
-                                <span class="input-group-text md-addon">$</span>
-                            </div>
-                            <input type="text" class="form-control" aria-label="Amount (to the nearest dollar)" />
-                            <div class="input-group-append">
-                                <span class="input-group-text md-addon">.00</span>
-                            </div>
-                            <Button variant="danger">RAISE</Button>
-                        </div> */}
-                    
-                    
-                    {/* <InputGroup className="mb-3 raise-amount">
-                    <InputGroup.Prepend>
-                    <InputGroup.Text>$</InputGroup.Text>
-                    </InputGroup.Prepend>
-                    <FormControl aria-label="Amount (to the nearest dollar)" />
-                    <InputGroup.Append>
-                    <InputGroup.Text>.00</InputGroup.Text>
-                    </InputGroup.Append>
-                    </InputGroup> */}
-                {/* <div className="card-player-dis"> */}
                     <Playercard />
-                {/* </div> */}
-            
                 </div>
           </>
         )
@@ -104,51 +75,4 @@ class Table extends React.Component{
 
 }
 
-
-
-
-
-// const Table = (props) =>{
-//     return(
-//       <div>
-//       <Navbar />
-//         <div class="col-md-20 col-md-push-40 offset-md-1 poker-table">
-//         <CardImg src={pokertable} title='Poker Table' />
-//         </div>
-     
-//             <ButtonGroup aria-label="Basic example" className="control-buttons">
-//             <Button variant="success">CALL</Button>
-//             <Button variant="warning">FOLD</Button>
-//             <Button variant="primary">CHECK</Button>
-//             </ButtonGroup>
-//             <form onSubmit={this.handleSubmit}>
-//                 <div class="md-form input-group mb-3">
-//                 <Button variant="danger">RAISE</Button>
-                
-//                     <div class="input-group-prepend">
-//                         <span class="input-group-text md-addon">$</span>
-//                     </div>
-//                     <input type="text" class="form-control" aria-label="Amount (to the nearest dollar)" />
-//                     <div class="input-group-append">
-//                         <span class="input-group-text md-addon">.00</span>
-//                     </div>
-//                 </div>
-//             </form>
-            
-//             {/* <InputGroup className="mb-3 raise-amount">
-//             <InputGroup.Prepend>
-//             <InputGroup.Text>$</InputGroup.Text>
-//             </InputGroup.Prepend>
-//             <FormControl aria-label="Amount (to the nearest dollar)" />
-//             <InputGroup.Append>
-//             <InputGroup.Text>.00</InputGroup.Text>
-//             </InputGroup.Append>
-//             </InputGroup> */}
-//         {/* <div className="card-player-dis"> */}
-//             <Playercard />
-//         {/* </div> */}
-      
-//         </div>
-//     )
-// }
 export default Table;

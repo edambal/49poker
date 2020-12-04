@@ -1,6 +1,6 @@
 import React from 'react';
 import {Button , Card} from 'react-bootstrap';
-import { MDBContainer, MDBRow, MDBCol, MDBBtn, MDBInput } from 'mdbreact';
+import { MDBContainer, MDBRow, MDBCol, MDBBtn, MDBInput, MDBAlert } from 'mdbreact';
 import {Redirect} from 'react-router-dom';
 import axios from 'axios';
 import Navbar from '../components/Navbar';
@@ -37,7 +37,10 @@ class Profile extends React.Component {
   }
 
   handleSubmit(event) {
-    alert('A name was submitted: ' + this.state.username);
+    alert('Welcome ' + this.state.username + '. Press OK to continue to you favorite table');
+    <MDBAlert color="success" >
+        Welcome {this.state.username}. Please continue to your favorite table'
+      </MDBAlert>
     event.preventDefault();
     // Lets Handle the input and send it over to db
     PokerModel.create(this.state)
