@@ -1,18 +1,18 @@
-# Getting Started with Create React App
+# 49poker
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A MERN Full-stack project application attempting to build a small portion of poker play.
 
-## Available Scripts
+## 
 
-In the project directory, you can run:
+The primary idea was to build a game that can be played with a group of friends and for the site itself to
+provide options on which rooms or tables the user wants to join based on the information he already has.
+It tries to implement a subset of the game , with 2 users and a dealer who are provided with the hands drawn once they enter the room.
 
-### `npm start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+### User Stories
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+![Image of Yaktocat]
+(https://octodex.github.com/images/yaktocat.png)
 
 ### `npm test`
 
