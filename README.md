@@ -48,6 +48,11 @@ The user can specify the amount of chips that he wants while signing up.
 Once in the room , he has the dealer and his co players that he want to play with.
 The player controls in the room allow you to play as per your way.
 
+A guide to poker hands here
+https://www.cardplayer.com/rules-of-poker/hand-rankings
+
+
+
 
 
 
