@@ -56,7 +56,7 @@ class Table extends React.Component{
             axios.get('https://deckofcardsapi.com/api/deck/new/shuffle/?deck_count=1')
       .then(res => {
         const deckId = res.data.deck_id;
-        console.log("card deck drwan with id",deckId);
+        console.log("Cards Drawn in Table is " , deckId);
         axios.get(`https://deckofcardsapi.com/api/deck/${deckId}/draw/?count=9`)
         .then(res =>{
           //   const deck = res.data
@@ -64,7 +64,16 @@ class Table extends React.Component{
           let vkcard=cardDeck.slice(0,2);
           let vdcard=cardDeck.slice(2,4);
           let dealer=cardDeck.slice(4,9);
-            
+          console.log("vijay's cards ",vdcard);
+          
+          // call api to decide the winner
+            axios.get(`https://api.pokerapi.dev/v1/winner/texas_holdem?cc=AC,KD,QH,JS,7C&pc[]=10S,8C&pc[]=3S,2C&pc[]=QS,JH`)
+            .then(res =>{
+                console.log("Winning Cards " , res.data.winners.map(winner=> winner.cards));
+                console.log("Winning Hand " , res.data.winners.map(winner=> winner.hand));
+                console.log("Winning Result " , res.data.winners.map(winner=> winner.result)); 
+
+            })
         })
       })
 
@@ -88,19 +97,20 @@ class Table extends React.Component{
                 <div class="col-md-20 col-md-push-40 offset-md-1 poker-table">
                 <CardImg src={pokertable} title='Poker Table' />
                 </div>
-            
                     <ButtonGroup aria-label="Basic example" className="control-buttons">
-                        <form ><Button variant="success">CALL</Button></form>
-                        <form ><Button variant="warning">FOLD</Button></form>
-                        <form>
-                            <Button onClick={this.decideWinner()} group type="submit" variant="primary">CHECK</Button>
-                        </form>                 
+                    <form>
+                        <Button variant="success">CALL</Button>
+                        <Button variant="warning">FOLD</Button>
+                        <Button type="submit" onClick={this.decideWinner()} group variant="primary">CHECK</Button>
+                    </form>
+                        
+                                      
                         <form onSubmit={this.handleSubmit}>
                             <MDBInput name="chipcount"  icon="dollar" group type="number" validate 
                             error="wrong" success="right" value={this.state.chipcount} onChange={this.handleChange}/>
                             <MDBBtn group type="submit" color="danger">RAISE</MDBBtn>
                         </form>
-                    </ButtonGroup>
+                    </ButtonGroup> 
                     <Playercard />
                 </div>
           </>
