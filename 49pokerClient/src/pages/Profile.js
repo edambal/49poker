@@ -1,9 +1,11 @@
 import React from 'react';
 import {Button , Card} from 'react-bootstrap';
 import { MDBContainer, MDBRow, MDBCol, MDBBtn, MDBInput } from 'mdbreact';
+import {Redirect} from 'react-router-dom';
 import axios from 'axios';
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
+import Table from '../components/Table';
 import PokerModel from '../models/pokerData';
 import './Home.css';
 
@@ -41,7 +43,11 @@ class Profile extends React.Component {
     PokerModel.create(this.state)
       .then((data) => {
         console.log("The player id is " , data.player._id);
-        this.props.history.push('/tables')
+        // this.props.history.push('/tables');
+        this.props.history.push({
+            pathname: "/tables",
+            state: { player: data.player }
+        })
       })
 
   }

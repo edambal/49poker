@@ -13,14 +13,14 @@ class PokerModel {
       });
   }
 
-  // static getOne(id) {
-  //   return fetch(`${url}/${id}`)
-  //     .then((res) => res.json())
-  //     .catch((err) => {
-  //       console.log('Error fetching data in PokerModel.getOne', err);
-  //       return { game: {} };
-  //     });
-  // }
+  static getOne(playerId) {
+    return fetch(`${playerurl}/${playerId}`)
+      .then((res) => res.json())
+      .catch((err) => {
+        console.log('Error fetching data in PokerModel.getOne', err);
+        return { player: {} };
+      });
+  }
 
   static create(newPlayer) {
     return fetch(playerurl, {
@@ -35,18 +35,18 @@ class PokerModel {
     });
   }
 
-  // static update(gameId, updatedPoker) {
-  //   return fetch(`${url}/${gameId}`, {
-  //       method: 'PUT',
-  //       headers: { 'Content-Type': 'application/json' },
-  //       body: JSON.stringify(updatedPoker)
-  //   })
-  //   .then((res) => res.json())
-  //   .catch((err) => {
-  //     console.log('Error fetching data in PokerModel.update', err);
-  //     return { game: {} };
-  //   });
-  // }
+  static update(playerId, updatedPlayer) {
+    return fetch(`${url}/${playerId}`, {
+        method: 'PUT',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(updatedPlayer)
+    })
+    .then((res) => res.json())
+    .catch((err) => {
+      console.log('Error fetching data in PokerModel.update', err);
+      return { player: {} };
+    });
+  }
 
   static delete(playerId) {
     return fetch(`${playerurl}/${playerId}`, {

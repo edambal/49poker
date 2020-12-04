@@ -14,8 +14,6 @@ class Table extends React.Component{
     constructor(props) {
         super(props);
         this.state = {
-          username: '',
-          image: '',
           chipcount: 0
         };
     
@@ -37,14 +35,15 @@ class Table extends React.Component{
       }
     
       handleSubmit(event) {
-        alert('A name was submitted: ' + this.state.username);
+        alert('A chipcount update was submitted: ' + this.props.location.state.player.chipcount);
         event.preventDefault();
         // Lets Handle the input and send it over to db
-        PokerModel.create(this.state)
-          .then((data) => {
-            console.log("The player id is " , data.player._id);
-            this.props.history.push('/tables')
-          })
+
+        // PokerModel.create(this.state)
+        //   .then((data) => {
+        //     console.log("The player id is " , data.player._id);
+        //     this.props.history.push('/tables')
+        //   })
     
       }
 
@@ -65,7 +64,7 @@ class Table extends React.Component{
                         <form onSubmit={this.handleSubmit}>
                             <MDBInput name="chipcount"  icon="dollar" group type="number" validate 
                             error="wrong" success="right" value={this.state.chipcount} onChange={this.handleChange}/>
-                            <MDBBtn group type="submit" color="primary">RAISE</MDBBtn>
+                            <MDBBtn group type="submit" color="danger">RAISE</MDBBtn>
                         </form>
                     </ButtonGroup>
                     
