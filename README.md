@@ -9,7 +9,7 @@ provide options on which rooms or tables the user wants to join based on the inf
 It tries to implement a subset of the game , with 2 users and a dealer who are provided with the hands drawn once they enter the room.
 
 
-### `npm start`
+### User Stories
 
 Runs the app in the development mode.\
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
