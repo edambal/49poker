@@ -22,11 +22,11 @@ class Users extends React.Component {
   deletePlayer = (id) => {
     console.log("I am deleting " , id)
     PokerModel.delete(id).then((data) => {
-      this.setState((prevState) => {
-        const updatedPlayers = prevState.players.filter((player) => player._id !== id);
+      // this.setState((prevState) => {
+      //   const updatedPlayers = prevState.players.filter((player) => player._id !== id);
 
-        return { players: updatedPlayers };
-      });
+      //   return { players: updatedPlayers };
+      // });
     });
   }
 
