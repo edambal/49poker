@@ -37,7 +37,7 @@ class PokerModel {
   }
 
   static update(playerId, updatedPlayer) {
-    return fetch(`${url}/${playerId}`, {
+    return fetch(`${playerurl}/${playerId}`, {
         method: 'PUT',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(updatedPlayer)
