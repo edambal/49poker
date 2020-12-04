@@ -8,10 +8,10 @@ const Footer=()=>{
             <footer className="on-ftr bg-secondary pushfooter">
             <div className="container">
                 <div className="row">
-                    <Link className="col-md-3 text-dark font-weight-bold" to="/tables">QuickLinks</Link>
-                    <Link className="col-md-3 text-dark font-weight-bold" to="/tables">ExtraLinks</Link>
-                    <Link className="col-md-3 text-dark font-weight-bold" to="/tables">AddressArea</Link>
-                    <Link className="col-md-3 text-dark font-weight-bold" to="/tables">StayTuned</Link>
+                    <Link className="col-md-3 text-dark font-weight-bold text-secondary" to="/tables">QuickLinks</Link>
+                    <Link className="col-md-3 text-dark font-weight-bold text-secondary" to="/tables">ExtraLinks</Link>
+                    <Link className="col-md-3 text-dark font-weight-bold text-secondary" to="/tables">AddressArea</Link>
+                    <Link className="col-md-3 text-dark font-weight-bold text-secondary" to="/tables">StayTuned</Link>
                 </div>
                 <div className="row ftr-desc">
                     <div className="col-md-3">

@@ -69,8 +69,8 @@ constructor(props){
       // console.log("CARDS", this.state.playerVk)
       
       // this.renderPlayerCard()
-      let vkcard=this.props.cards.slice(0, 2);
-      let vdcard=this.props.cards.slice(2, 4);
+      let vkcard=this.props.cards.slice(0,2);
+      let vdcard=this.props.cards.slice(2,4);
       let dealer= this.props.cards.slice(4,9)
    
       // for(let i=0; i<this.props.cards.length; i++){

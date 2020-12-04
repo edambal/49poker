@@ -1,11 +1,12 @@
 import React from 'react';
 import {Button,ButtonGroup, CardImg} from 'react-bootstrap';
-import { MDBContainer, MDBRow, MDBCol, MDBBtn, MDBInput } from 'mdbreact';
+import { MDBContainer, MDBRow, MDBCol, MDBBtn, MDBInput, MDBAlert } from 'mdbreact';
 import {InputGroup} from 'react-bootstrap';
 import {FormControl} from 'react-bootstrap';
 import Playercard from './Playercard';
 import PokerModel from '../models/pokerData';
 import pokertable from '../images/custompoker.jpg';
+import axios from 'axios';
 import './Table.css'
 import Navbar from './Navbar';
 import Footer from './Footer';
@@ -35,7 +36,9 @@ class Table extends React.Component{
       }
     
       handleSubmit(event) {
-        alert('A chipcount update was submitted: ' + this.props.location.state.player.chipcount);
+        // alert('A chipcount update was submitted: ' + this.props.location.state.player.chipcount);
+        alert(this.props.location.state.player.username + ' raised the bet to : ' + this.state.chipcount);
+
         event.preventDefault();
         // Lets Handle the input and send it over to db
 
@@ -47,8 +50,37 @@ class Table extends React.Component{
     
       }
 
-      render() {
+      decideWinner(){
+          // Handle the winner logic
 
+            axios.get('https://deckofcardsapi.com/api/deck/new/shuffle/?deck_count=1')
+      .then(res => {
+        const deckId = res.data.deck_id;
+        console.log("card deck drwan with id",deckId);
+        axios.get(`https://deckofcardsapi.com/api/deck/${deckId}/draw/?count=9`)
+        .then(res =>{
+          //   const deck = res.data
+          let cardDeck = res.data.cards;
+          let vkcard=cardDeck.slice(0,2);
+          let vdcard=cardDeck.slice(2,4);
+          let dealer=cardDeck.slice(4,9);
+            
+        })
+      })
+
+          return(
+            <MDBAlert >
+              Ya whatever man
+            </MDBAlert>
+          )
+          
+        //   event.preventDefault();
+          
+
+      }
+
+      render() {
+        console.log("card deck " , this.props.cardDeck);
         return (
           <>
             <div>
@@ -58,9 +90,11 @@ class Table extends React.Component{
                 </div>
             
                     <ButtonGroup aria-label="Basic example" className="control-buttons">
-                        <Button variant="success">CALL</Button>
-                        <Button variant="warning">FOLD</Button>
-                        <Button variant="primary">CHECK</Button>
+                        <form ><Button variant="success">CALL</Button></form>
+                        <form ><Button variant="warning">FOLD</Button></form>
+                        <form>
+                            <Button onClick={this.decideWinner()} group type="submit" variant="primary">CHECK</Button>
+                        </form>                 
                         <form onSubmit={this.handleSubmit}>
                             <MDBInput name="chipcount"  icon="dollar" group type="number" validate 
                             error="wrong" success="right" value={this.state.chipcount} onChange={this.handleChange}/>

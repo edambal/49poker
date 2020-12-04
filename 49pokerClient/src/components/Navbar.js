@@ -19,10 +19,10 @@ const Navbar = (props) =>{
                   aria-expanded="false">Rooms
                 </a>
                 <div className="dropdown-menu dropdown-primary " aria-labelledby="navbarDropdownMenuLink">
-                  <Link className="dropdown-item font-weight-bold text-primary" to="/rooms">Sunrisers<span className="sr-only">(current)</span></Link>
-                  <Link className="dropdown-item font-weight-bold text-primary" to="/rooms">Royals<span className="sr-only">(current)</span></Link>
-                  <Link className="dropdown-item font-weight-bold text-primary" to="/rooms">SuperKings<span className="sr-only">(current)</span></Link>
-                  <Link className="dropdown-item font-weight-bold text-primary" to="/rooms">Challengers<span className="sr-only">(current)</span></Link>
+                  <Link className="dropdown-item font-weight-bold text-secondary" to="/rooms">Sunrisers<span className="sr-only">(current)</span></Link>
+                  <Link className="dropdown-item font-weight-bold text-secondary" to="/rooms">Royals<span className="sr-only">(current)</span></Link>
+                  <Link className="dropdown-item font-weight-bold text-secondary" to="/rooms">SuperKings<span className="sr-only">(current)</span></Link>
+                  <Link className="dropdown-item font-weight-bold text-secondary" to="/rooms">Challengers<span className="sr-only">(current)</span></Link>
                 </div>
               </li>
               <li className="nav-item dropdown px-5">
@@ -30,9 +30,9 @@ const Navbar = (props) =>{
                   aria-expanded="false">Tables
                 </a>
                 <div className="dropdown-menu dropdown-primary" aria-labelledby="navbarDropdownMenuLink">
-                  <Link className="dropdown-item font-weight-bold text-primary" to="/tables">CashKing</Link>
-                  <Link className="dropdown-item font-weight-bold text-primary" to="/tables">SuperNova</Link>
-                  <Link className="dropdown-item font-weight-bold text-primary" to="/tables">BrainBuster</Link>
+                  <Link className="dropdown-item font-weight-bold text-secondary" to="/tables">CashKing</Link>
+                  <Link className="dropdown-item font-weight-bold text-secondary" to="/tables">SuperNova</Link>
+                  <Link className="dropdown-item font-weight-bold text-secondary" to="/tables">BrainBuster</Link>
                 </div>
               </li>
               <li className="nav-item dropdown px-5">
@@ -40,9 +40,9 @@ const Navbar = (props) =>{
                   aria-expanded="false">Tournaments
                 </a>
                 <div className="dropdown-menu dropdown-primary" aria-labelledby="navbarDropdownMenuLink">
-                  <Link className="dropdown-item font-weight-bold text-primary" to="/tournaments">fulltilt</Link>
-                  <Link className="dropdown-item font-weight-bold text-primary" to="/tournaments">worlds best</Link>
-                  <Link className="dropdown-item font-weight-bold text-primary" to="/tournaments">The Carnage</Link>
+                  <Link className="dropdown-item font-weight-bold text-secondary" to="/tournaments">fulltilt</Link>
+                  <Link className="dropdown-item font-weight-bold text-secondary" to="/tournaments">worlds best</Link>
+                  <Link className="dropdown-item font-weight-bold text-secondary" to="/tournaments">The Carnage</Link>
                 </div>
               </li>
               <li className="nav-item px-5">

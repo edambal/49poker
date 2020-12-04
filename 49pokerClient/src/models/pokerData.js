@@ -2,6 +2,7 @@ import axios from 'axios';
 
 const playerurl = `http://localhost:4000/api/v1/player`;
 const roundurl = `http://localhost:4000/api/v1/round`;
+const calcWwinnerurl = `https://api.pokerapi.dev/v1/winner/texas_holdem`
 
 class PokerModel {
   static all() {
