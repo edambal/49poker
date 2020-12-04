@@ -1,6 +1,7 @@
 import React from 'react';
-import PokerModel from '../models/pokerData;
-import GameCard from '../components/GameCard';
+import PokerModel from '../models/pokerData';
+import './Table.css'
+
 
 class Users extends React.Component {
   state = {
@@ -9,7 +10,7 @@ class Users extends React.Component {
 
   componentDidMount() {
     // MAKE API CALL
-    GameModel.all().then((data) => {
+    PokerModel.all().then((data) => {
       console.log('data:', data);
 
       this.setState({ players: data.players });
@@ -17,7 +18,7 @@ class Users extends React.Component {
   }
 
   deleteGame = (id) => {
-    GameModel.delete(id).then((data) => {
+    PokerModel.delete(id).then((data) => {
       this.setState((prevState) => {
         const updatedGames = prevState.games.filter((game) => game._id !== id);
 
@@ -29,11 +30,9 @@ class Users extends React.Component {
   renderGames() {
     return this.state.players.map((player) => {
       return (
-        <GameCard 
-          game={game} 
-          deleteGame={this.deleteGame}
-          key={game._id}
-        />
+        <div class="poker-table">
+          <a href="#" class="btn btn-primary">Delete {player.username  }</a>
+        </div>
       );
     });
   }
