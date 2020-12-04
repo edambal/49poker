@@ -1,5 +1,6 @@
 import React from 'react';
 import PokerModel from '../models/pokerData';
+import { MDBContainer, MDBRow, MDBCol, MDBBtn, MDBInput } from 'mdbreact';
 import './Table.css'
 
 
@@ -17,31 +18,36 @@ class Users extends React.Component {
     });
   }
 
-  deleteGame = (id) => {
+
+  deletePlayer = (id) => {
+    console.log("I am deleting " , id)
     PokerModel.delete(id).then((data) => {
       this.setState((prevState) => {
-        const updatedGames = prevState.games.filter((game) => game._id !== id);
+        const updatedPlayers = prevState.players.filter((player) => player._id !== id);
 
-        return { games: updatedGames };
+        return { players: updatedPlayers };
       });
     });
   }
 
-  renderGames() {
+  renderPlayers() {
     return this.state.players.map((player) => {
       return (
+
         <div class="poker-table">
-          <a href="#" class="btn btn-primary">Delete {player.username  }</a>
+            <MDBBtn onClick={this.deletePlayer(player._id)} group type="submit" color="primary">Delete {player.username }</MDBBtn>
         </div>
       );
     });
   }
 
+
+
   render() {
     return (
       <div>
         <ul className="gameCardContainer">
-          {this.renderGames()}
+          {this.renderPlayers()}
         </ul>
       </div>
     )

@@ -56,6 +56,17 @@ const Navbar = (props) =>{
                   <Link className="dropdown-item font-weight-bold text-primary" to="/rooms">Challengers<span className="sr-only">(current)</span></Link>
                 </div> */}
               </li>
+              <li className="nav-item px-5">
+                {/* <a className="nav-link dropdown-toggle" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true"
+                  aria-expanded="false">create profile
+                </a>
+                <div className="dropdown-menu dropdown-primary " aria-labelledby="navbarDropdownMenuLink"> */}
+                  <Link className="dropdown-item font-weight-bold text-secondary" to="/admin">Admin<span className="sr-only">(current)</span></Link>
+                  {/* <Link className="dropdown-item font-weight-bold text-primary" to="/rooms">Royals<span className="sr-only">(current)</span></Link>
+                  <Link className="dropdown-item font-weight-bold text-primary" to="/rooms">SuperKings<span className="sr-only">(current)</span></Link>
+                  <Link className="dropdown-item font-weight-bold text-primary" to="/rooms">Challengers<span className="sr-only">(current)</span></Link>
+                </div> */}
+              </li>
             </ul>
           </div>
     </nav>
